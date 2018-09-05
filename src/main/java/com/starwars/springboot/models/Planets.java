@@ -8,13 +8,13 @@ public class Planets{
     private String population;
     private String climate;
     private String terrain;
-    private List<String> famousResidents;
+    private List<People> famousResidents;
 
     public Planets(){
 
     }
 
-    public Planets(String name, String diameter, String population, String climate, String terrain, List<String> famousResidents){
+    public Planets(String name, String diameter, String population, String climate, String terrain, List<People> famousResidents){
         this.name = name;
         this.diameter = diameter;
         this.population = population;
@@ -58,13 +58,14 @@ public class Planets{
     public void setClimate(String climate){
         this.climate = climate;
     }
-    public List<String> getFamousResidents(){
+    public List<People> getFamousResidents(){
         return famousResidents;
     }
 
     @Override
     public String toString(){
-        return String.format(l, format, args)
+        return String.format(
+            "Planet [name=%s, diameter=%s, poulation=%s, terrain=%s, climate=%s]", name, diameter, population, terrain, climate);
     } 
 
     
