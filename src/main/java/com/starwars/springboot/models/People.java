@@ -35,6 +35,69 @@ public class People{
         this.vehicles = vehicles;
     }
 
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getBirthYear(){
+        return birthYear;
+    }
+
+    public void setBirthdYear(String birthYear){
+        this.birthYear = birthYear;
+    }
+    public String getGender(){
+        return gender;
+    }
+
+    public void setGender(String gender){
+        this.gender = gender;
+    }
+    public String getHeight(){
+        return height;
+    }
+
+    public void setHeight(String height){
+        this.height = height;
+    }
+    public String getMass(){
+        return mass;
+    }
+
+    public void setMass(String mass){
+        this.mass = mass;
+    }
+    public String getSkinColor(){
+        return skinColor;
+    }
+
+    public void setSkinColor(String skinColor){
+        this.skinColor = skinColor;
+    }
+    public String getHomeWorld(){
+        return homeWorld;
+    }
+
+    public void setHomeWorld(String homeWorld){
+        this.homeWorld = homeWorld;
+    }
+
+    public List<Films> getFilms(){
+        return films;
+    }
+    public List<Species> getSpecies(){
+        return species;
+    }
+    public List<StarShips> getStarShips(){
+        return starShips;
+    }
+    public List<Vehicles> getVehicles(){
+        return vehicles;
+    }
+
     
 
 
