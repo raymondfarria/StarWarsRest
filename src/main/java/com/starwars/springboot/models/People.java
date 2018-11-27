@@ -2,9 +2,7 @@ package com.starwars.springboot.models;
 
 import java.util.List;
 
-
-
-public class People{
+public class People {
     private String name;
     private String birthYear;
     private String gender;
@@ -17,11 +15,13 @@ public class People{
     private List<StarShips> starShips;
     private List<Vehicles> vehicles;
 
-    public People(){
+    public People() {
 
     }
 
-    public People(String name, String birthYear, String gender, String height, String mass, String skinColor, String homeWorld, List<Films> films, List<Species> species, List<StarShips> starShips, List<Vehicles> vehicles){
+    public People(String name, String birthYear, String gender, String height, String mass, String skinColor,
+            String homeWorld, List<Films> films, List<Species> species, List<StarShips> starShips,
+            List<Vehicles> vehicles) {
         this.name = name;
         this.birthYear = birthYear;
         this.gender = gender;
@@ -35,70 +35,76 @@ public class People{
         this.vehicles = vehicles;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
-    public String getBirthYear(){
+
+    public String getBirthYear() {
         return birthYear;
     }
 
-    public void setBirthdYear(String birthYear){
+    public void setBirthdYear(String birthYear) {
         this.birthYear = birthYear;
     }
-    public String getGender(){
+
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(String gender){
+    public void setGender(String gender) {
         this.gender = gender;
     }
-    public String getHeight(){
+
+    public String getHeight() {
         return height;
     }
 
-    public void setHeight(String height){
+    public void setHeight(String height) {
         this.height = height;
     }
-    public String getMass(){
+
+    public String getMass() {
         return mass;
     }
 
-    public void setMass(String mass){
+    public void setMass(String mass) {
         this.mass = mass;
     }
-    public String getSkinColor(){
+
+    public String getSkinColor() {
         return skinColor;
     }
 
-    public void setSkinColor(String skinColor){
+    public void setSkinColor(String skinColor) {
         this.skinColor = skinColor;
     }
-    public String getHomeWorld(){
+
+    public String getHomeWorld() {
         return homeWorld;
     }
 
-    public void setHomeWorld(String homeWorld){
+    public void setHomeWorld(String homeWorld) {
         this.homeWorld = homeWorld;
     }
 
-    public List<Films> getFilms(){
+    public List<Films> getFilms() {
         return films;
     }
-    public List<Species> getSpecies(){
+
+    public List<Species> getSpecies() {
         return species;
     }
-    public List<StarShips> getStarShips(){
+
+    public List<StarShips> getStarShips() {
         return starShips;
     }
-    public List<Vehicles> getVehicles(){
+
+    public List<Vehicles> getVehicles() {
         return vehicles;
     }
-
-    
-
 
 }
