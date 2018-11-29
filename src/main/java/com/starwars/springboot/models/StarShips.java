@@ -1,6 +1,7 @@
 package com.starwars.springboot.models;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class StarShips {
     private String shipName;
@@ -12,8 +13,10 @@ public class StarShips {
     private String numOfPassengers;
     private String maxSpeed;
     private String cargo;
-    private Films[] filmArray;
-    private People[] pilots;
+    private List<StarShips> starships;
+
+    private List<Films> filmList;
+    private List<People> pilotList;
 
     public StarShips() {
         this.shipName = shipName;
@@ -25,8 +28,8 @@ public class StarShips {
         this.numOfPassengers = numOfPassengers;
         this.maxSpeed = maxSpeed;
         this.cargo = cargo;
-        this.filmArray = filmArray;
-        this.pilots = pilots;
+        this.filmList = filmList;
+        this.pilotList = pilotList;
     }
 
     public String getName() {
@@ -101,12 +104,12 @@ public class StarShips {
         this.cargo = cargo;
     }
 
-    public Films[] getFilms() {
-        return filmArray;
+    public List<StarShips> getAllStarships() {
+        return starships;
     }
 
-    public People[] getPilots() {
-        return pilots;
+    public void setAllStarships(List<StarShips> ships) {
+        this.starships = ships;
     }
 
 }

@@ -2,28 +2,27 @@ package com.starwars.springboot.models;
 
 import java.util.List;
 
+import com.starwars.springboot.models.*;
+
 public class Films {
     private String title;
     private String director;
     private String producer;
+    private List<Films> filmsList;
 
-    private Species[] speciesArray;
-    private People[] peopleArray;
-    private Vehicles[] vehiclesArray;
-    private Planets[] planetsArray;
-    // private List<Species> speciesList;
-    // private List<People> peopleList;
-    // private List<Vehicles> vehiclesList;
-    // private List<Planets> planetList;
+    private List<Species> speciesList;
+    private List<Vehicles> vehiclesList;
+    private List<People> peopleList;
+    private List<Planets> planetsList;
 
     public Films() {
         this.title = title;
         this.director = director;
         this.producer = producer;
-        this.speciesArray = speciesArray;
-        this.peopleArray = peopleArray;
-        this.vehiclesArray = vehiclesArray;
-        this.planetsArray = planetsArray;
+        this.speciesList = speciesList;
+        this.peopleList = peopleList;
+        this.vehiclesList = vehiclesList;
+        this.planetsList = planetsList;
     }
 
     public String getTitle() {
@@ -50,20 +49,12 @@ public class Films {
         this.director = director;
     }
 
-    public Species[] getSpecies() {
-        return speciesArray;
+    public void setFilms(List<Films> films) {
+        filmsList = films;
     }
 
-    public People[] getPeople() {
-        return peopleArray;
-    }
-
-    public Vehicles[] getVehicles() {
-        return vehiclesArray;
-    }
-
-    public Planets[] getPlanets() {
-        return planetsArray;
+    public List<Films> getFilms() {
+        return filmsList;
     }
 
 }

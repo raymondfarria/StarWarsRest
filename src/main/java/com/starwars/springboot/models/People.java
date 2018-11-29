@@ -2,6 +2,8 @@ package com.starwars.springboot.models;
 
 import java.util.List;
 
+import com.starwars.springboot.models.*;
+
 public class People {
     private String name;
     private String birthYear;
@@ -10,6 +12,8 @@ public class People {
     private String mass;
     private String skinColor;
     private String homeWorld;
+    private List<People> people;
+
     private List<Films> films;
     private List<Species> species;
     private List<StarShips> starShips;
@@ -91,20 +95,12 @@ public class People {
         this.homeWorld = homeWorld;
     }
 
-    public List<Films> getFilms() {
-        return films;
+    public void setPeople(List<People> people) {
+        this.people = people;
     }
 
-    public List<Species> getSpecies() {
-        return species;
-    }
-
-    public List<StarShips> getStarShips() {
-        return starShips;
-    }
-
-    public List<Vehicles> getVehicles() {
-        return vehicles;
+    public List<People> getPeople() {
+        return people;
     }
 
 }
