@@ -14,6 +14,7 @@ public class Vehicles {
     private String cargo;
     private Films[] filmArray;
     private People[] pilots;
+    private Vehicles[] vehicles;
 
     public Vehicles() {
         this.name = name;
@@ -107,6 +108,10 @@ public class Vehicles {
 
     public People[] getPilots() {
         return pilots;
+    }
+
+    public Vehicles[] getVehicles() {
+        return vehicles;
     }
 
 }

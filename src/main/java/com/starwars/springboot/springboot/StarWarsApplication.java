@@ -1,4 +1,4 @@
-package com.starwars.springboot.starwarsservices;
+package com.starwars.springboot.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
